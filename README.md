@@ -17,19 +17,19 @@ Este proyecto implementa un entorno de pruebas de estres y monitorizacion en tie
 
 ### 1. Levantar el Servidor (Broker)
 Inicia el contenedor de Docker desde tu terminal:
-`ash
+`bash
 docker start mi_broker_mqtt
 `",
 ",
 
 Arranca la consola central de control de eventos, alarmas y contadores:
-`ash
+`bash
 python Simulador/receptor.py
 `",
 ",
 
 Arranca el motor asincrono para desplegar los 1.000 sensores virtuales de forma progresiva:
-`ash
+`bash
 python Simulador/simulador_masivo.py
 `",
 ",
